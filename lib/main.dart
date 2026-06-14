@@ -11,20 +11,19 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
+      
       appBar: AppBar(
         title: Text(
-        'ID Card',
+        'My Profile',
         style: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
-      ),
-       
-        
-        
+        ),
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.grey[800],
       ),
 
       body: Padding(
@@ -32,8 +31,6 @@ class MyWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            
-            
             Center(
               child: CircleAvatar(
                 radius: 50,
@@ -44,7 +41,7 @@ class MyWidget extends StatelessWidget {
             Divider(
               height: 40,
               thickness: 2,
-              color: const Color.fromARGB(255, 177, 90, 193),
+              color: Colors.grey[600],
             ),
 
               
@@ -53,7 +50,7 @@ class MyWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.purple,
+                color: Colors.grey[400],
               ),
             ),
             
@@ -74,7 +71,7 @@ class MyWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.purple,
+                color: Colors.grey[400],
               ),
             ),
 
@@ -96,7 +93,7 @@ class MyWidget extends StatelessWidget {
               children: [
                 Icon(
                   Icons.email, 
-                  color: Colors.purple,
+                  color: Colors.grey[400],
                   size: 40.0,
                 ),
                 SizedBox(width: 10.0),
@@ -111,6 +108,35 @@ class MyWidget extends StatelessWidget {
                 ),
               ],
             ),
+
+            SizedBox(height: 20.0),
+
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Description :',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey[400],
+                  ),
+                ),
+
+                Text(
+                  'Programming is not about what you know,\' it is about what you can figure out.',
+
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.0,
+                  ),
+               ),
+              ],
+            ),
+
+
           ],
         ),
       ),
